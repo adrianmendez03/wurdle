@@ -1,5 +1,12 @@
 import React from 'react';
+import { GlobalStyle } from './components/design-system/GlobalStyle';
+import { Wurdle } from './components/Wurdle';
 
 export const App = () => {
-  return <h1>hello!</h1>;
+  return (
+    <React.Fragment>
+      <GlobalStyle key="global_styles" />
+      <Wurdle key="canvas" />
+    </React.Fragment>
+  );
 };
