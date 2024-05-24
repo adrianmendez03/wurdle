@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Key } from './Key';
-import { SIZES } from './design-system/tokens';
+import { SIZES } from '../design-system/tokens';
 
 const Column = styled.div`
   display: flex;

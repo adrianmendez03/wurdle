@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { COLORS } from './design-system/tokens/colors';
-import { Keyboard } from './Keyboard';
+import { Keyboard } from './keyboard/Keyboard';
 
 const Background = styled.div`
   display: flex;

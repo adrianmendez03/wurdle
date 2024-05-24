@@ -1,5 +1,5 @@
 import React from 'react';
-import { GlobalStyle } from './components/design-system/GlobalStyle';
+import { GlobalStyle } from './components/design-system/global_style';
 import { Wurdle } from './components/Wurdle';
 
 export const App = () => {
