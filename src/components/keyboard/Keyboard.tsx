@@ -1,24 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Key } from './Key';
 import { SIZES } from '../design-system/tokens';
-
-const Column = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: ${SIZES.GAP.MD};
-`;
-
-const Row = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: ${SIZES.GAP.SM};
-`;
+import { Column, Row } from '../design-system/flex';
 
 export const Keyboard = () => (
-  <Column>
-    <Row>
+  <Column gap={SIZES.GAP.MD}>
+    <Row gap={SIZES.GAP.SM} justifyContent="center">
       <Key label="Q" />
       <Key label="W" />
       <Key label="E" />
@@ -30,7 +17,7 @@ export const Keyboard = () => (
       <Key label="O" />
       <Key label="P" />
     </Row>
-    <Row>
+    <Row gap={SIZES.GAP.SM} justifyContent="center">
       <Key label="A" />
       <Key label="S" />
       <Key label="D" />
@@ -41,7 +28,7 @@ export const Keyboard = () => (
       <Key label="K" />
       <Key label="L" />
     </Row>
-    <Row>
+    <Row gap={SIZES.GAP.SM} justifyContent="center">
       <Key miniLabel label="ENTER" />
       <Key label="Z" />
       <Key label="X" />
