@@ -8,6 +8,8 @@ const Container = styled.button`
   background-color: ${COLORS.BACKGROUND.GREY};
   border-radius: ${SIZES.BORDER_RADIUS.XS};
   border: none;
+  padding: 0px;
+  margin: 0px;
 `;
 
 type Props = {
